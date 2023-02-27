@@ -1,0 +1,69 @@
+@media (max-width: 690px) {
+    .hamburguer{
+        display: block;
+        z-index: 999;
+    }
+    .navbar-nav{
+        position: fixed;
+        top: 0;
+        right: -100%;
+        height: 100vh;
+        background-color: white;
+        margin: 0;
+        flex-direction: column;
+        padding: 100px 20px;
+        width: 100%;
+        max-width: 250px;
+        transition: .5s ease-in-out;
+    }
+    .navbar-nav.active{
+        right: 0%;
+    }
+
+    #menu.active{
+        background-color: white;
+        transition: .5s ease-in-out;
+    }
+
+
+    .nav-link{
+        background-color: white;
+
+        img{
+           background-color: white; 
+        }
+    }
+    .navbar .navbar-nav .dropdown-menu{
+        position: relative;
+    }
+    .navbar-item{
+        background-color: white;
+    }
+    .acount{ 
+        background-color: white;
+        .acount-item{
+        display: block;
+        background-color: white;
+        }
+    }
+    /*------------------MENU--------------------*/
+
+    main{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+    
+    .image{
+        order: 1;
+        padding: 30px 0;
+    }
+
+    .content{
+        order: 2;
+    }
+    .clients img{
+        margin: 0;
+        padding: 5px 30px;
+    }
+}

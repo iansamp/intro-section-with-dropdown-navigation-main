@@ -1,0 +1,135 @@
+@import url("./sass/responsive.scss");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: rgb(223, 223, 223);
+  font-family: "Epilogue", sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-nav {
+  display: flex;
+  justify-content: baseline;
+  align-items: center;
+  padding: 16px;
+  gap: 10px;
+}
+
+ul, a {
+  text-decoration: none;
+  list-style: none;
+  color: black;
+}
+
+.navbar .navbar-nav li {
+  display: inline;
+  position: relative;
+}
+
+.navbar .navbar-nav li a {
+  display: block;
+  padding: 16px;
+  color: hsl(0, 0%, 41%);
+}
+
+.navbar .navbar-nav li a:hover {
+  color: hsl(0, 0%, 8%);
+  transition: 0.5s;
+}
+
+.navbar .navbar-nav .dropdown-menu {
+  display: none;
+  position: absolute;
+  padding: 10px;
+  border-radius: 2%;
+  background: white;
+}
+
+#dropdown-menu.active {
+  display: block;
+}
+
+#company-menu.active {
+  display: block;
+}
+
+.navbar .navbar-nav .dropdown-menu .dropdown-item {
+  background-color: white;
+}
+
+.navbar .navbar-nav .dropdown-menu img {
+  display: block;
+}
+
+.acount {
+  padding: 10px;
+  margin: 10px;
+}
+
+.acount .acount-item {
+  padding: 10px 30px;
+  margin: 10px;
+  border-radius: 25px;
+}
+
+.acount .acount-item:hover {
+  border: 1px solid black;
+}
+
+/*<-------------------END-MENU----------------------->*/
+main {
+  display: flex;
+  margin: 25px 90px;
+}
+
+.content {
+  margin: 30px;
+}
+
+.content .infos h1 {
+  font-family: "Epilogue", sans-serif;
+  font-weight: 700;
+  font-size: 82px;
+}
+
+.content .infos p {
+  color: rgb(139, 139, 139);
+  margin-top: 50px;
+  width: 70%;
+}
+
+.content .infos a {
+  display: block;
+  margin-top: 25px;
+  border-radius: 25px;
+  width: 25%;
+  text-align: center;
+  padding: 20px;
+}
+
+.content .infos a:hover {
+  border: 1px solid black;
+  transition: 0.5s;
+}
+
+.clients img {
+  margin-top: 70px;
+  margin: 100px 10px;
+}
+
+.image div img {
+  max-width: 100%;
+}
+
+.hamburguer {
+  cursor: pointer;
+  border: none;
+  display: none;
+  background-color: white;
+}/*# sourceMappingURL=style.css.map */
